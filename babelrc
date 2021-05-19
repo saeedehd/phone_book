@@ -1,0 +1,30 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "last 2 versions"
+      }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    [
+      "babel-plugin-styled-components",
+      {
+        "displayName": true,
+        "ssr": false,
+        "fileName": false,
+        "minify": true,
+        "transpileTemplateLiterals": true,
+        "namespace": "phone_book"
+      }
+    ]
+  ]
+}
